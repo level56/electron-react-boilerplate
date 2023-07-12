@@ -1,7 +1,10 @@
 import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
+import Checkers from '../components/checkers';
 import icon from '../../assets/icon.svg';
 import './App.css';
+import TransformStage from '../components/transform';
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function Hello() {
   return (
     <div>
@@ -33,6 +36,7 @@ function Hello() {
             </span>
             Donate
           </button>
+          <div>Helloo</div>
         </a>
       </div>
     </div>
@@ -43,7 +47,7 @@ export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Hello />} />
+        <Route path="/" element={<Checkers/>} />
       </Routes>
     </Router>
   );
